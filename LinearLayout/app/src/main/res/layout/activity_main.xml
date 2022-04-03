@@ -12,21 +12,47 @@
         android:layout_height="wrap_content"
         android:text="Android Development"
         android:textSize="20sp"
-        android:layout_margin="20dp"
-        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:padding="8dp"
         android:textColor="#0d47a1"
         android:textStyle="bold"
-        android:textAlignment="center"/>
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello There"
+        android:layout_gravity="center"
         android:textSize="18sp"
         android:textColor="@color/black"
+        android:padding="8dp"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_margin="20dp"
-        android:padding="10sp"
-        android:textAlignment="center"/>
+        android:layout_gravity="center"
+        android:src="@drawable/tony_stark"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#0288D1"
+        android:backgroundTint="@color/material_dynamic_primary30"
+        android:text="Click Here"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter your name here"
+        android:inputType="text"
+        android:minHeight="48dp" />
 
 
 </LinearLayout>

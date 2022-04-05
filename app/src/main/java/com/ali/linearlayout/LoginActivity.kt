@@ -29,12 +29,12 @@ class LoginActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences(getString(R.string.preference_file_name),
             Context.MODE_PRIVATE)
         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
+        setContentView(R.layout.activity_login)
         if (isLoggedIn){
            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+            finish()
         }
-        else{
-            setContentView(R.layout.activity_login)
-        }
+
         title = "Log In"
         etMobileNumber = findViewById(R.id.etMobileNumber)
         etPassword = findViewById(R.id.etPassword)
